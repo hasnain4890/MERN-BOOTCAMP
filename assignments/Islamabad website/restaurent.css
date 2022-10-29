@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+
+    background-color: grey;
+  
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+.navbar .icon {
+    width: 17%;
+    height: 5rem;
+    text-align: center;
+    border-radius: 4rem;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    margin-top: .7rem;
+}
+
+.navbar .logo {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.icon {
+    width: 280px;
+    float: left;
+    height: 70px;
+    margin-left: 3rem;
+
+}
+
+/* .logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 19px;
+
+} */
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 39px;
+    font-size: 20px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.4s;
+
+
+}
+
+ul li a:hover {
+    color: blue;
+}
+
+.search {
+    margin-top: .5rem;
+    width: 330px;
+    float: left;
+
+    margin-left: 26rem;
+
+}
+
+.srch {
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid blue;
+    margin-top: 24px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: blue;
+    border: 2px solid blue;
+    margin-top: 24px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.btn:focus {
+    outline: none;
+
+}
+
+.srch:focus {
+    outline: none;
+}
+.blog-section {
+    width: 100%;
+    background-color: #160d1b;
+
+}
+
+.blog-section .section-content {
+    width: 85%;
+    margin: 1px auto;
+
+}
+
+.blog-section .section-content .title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: #23d25d;
+
+
+}
+
+.blog-section .section-content .title h2 {
+    font-size: 40px;
+    color: #23d25d;
+    text-transform: uppercase;
+    position: relative;
+    top: 2rem;
+    
+   
+}
+
+.blog-section .section-content .title p {
+    font-size: 18px;
+    color: #f6eeee;
+    margin-top: 20px;
+    position: relative;
+        top: 2rem;
+
+}
+
+.blog-section .section-content .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 50px;
+    margin: 25px auto;
+    position: relative;
+        top: 2rem;
+}
+
+.blog-section .section-content .cards .card {
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+
+}
+
+.blog-section .section-content .cards .card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.blog-section .section-content .cards .card .article {
+    padding: 15px 20px;
+
+}
+
+.blog-section .section-content .cards .card .article h4 {
+    font-size: 24px;
+    color: 4a4a4a;
+}
+
+.blog-section .section-content .cards .card .article p {
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #6a6a6a;
+}
+
+.blog-section .section-content .cards .card a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #25c5c5;
+    padding: 8px 15px;
+    margin-left: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.blog-section .section-content .cards .card .posted-date {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 6px 15px;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+.footer {
+    width: 100%;
+    height: 15vh;
+    border: 2px solid pink;
+    background-color: rgb(10, 42, 21);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media screen and (max-width: 990px) {
+    .blog-section .section-content .cards {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: red;}
+        .blog-section .section-content .cards .card .article {
+                padding: 15px 20px;
+        
+            }
+        
+            .blog-section .section-content .cards .card .article h4 {
+                font-size: 18px;
+                color: 4a4a4a;
+            }
+        
+            .blog-section .section-content .cards .card .article p {
+                font-size: 8px;
+                margin: 10px 0px;
+                color: #6a6a6a;
+            }
+        
+            .blog-section .section-content .cards .card a {
+                text-decoration: none;
+                display: inline-block;
+                background-color: #25c5c5;
+                padding: 8px 15px;
+                margin-left: 20px;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+        
+            .blog-section .section-content .cards .card .posted-date {
+                font-weight: 350;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                background-color: black;
+                color: #fff;
+                padding: 4px 11px;
+                margin-left: 12px;
+                margin-top: 8px;
+            }
+                        .blog-section .section-content.title h2 {
+                            font-size: 40px;
+                            color: #23d25d;
+                            text-transform: uppercase;
+                        }
+            
+                        .blog-section .section-content .title p {
+                            font-size: 18px;
+                            color: #6a6a6a;
+                            margin-top: 20px;
+            
+                        }
+
+    }
+
+
+
+
+        @media screen and (max-width: 700px) {
+            .blog-section .section-content .cards {
+                grid-template-columns:1fr;
+                background-color: red;
+            }
+    
+            .blog-section .section-content .cards .card .article {
+                padding: 15px 20px;
+    
+            }
+    
+            .blog-section .section-content .cards .card .article h4 {
+                font-size: 13px;
+                color: 4a4a4a;
+            }
+    
+            .blog-section .section-content .cards .card .article p {
+                font-size: 5px;
+                margin: 10px 0px;
+                color: #6a6a6a;
+            }
+    
+            .blog-section .section-content .cards .card a {
+                text-decoration: none;
+                display: inline-block;
+                background-color: #25c5c5;
+                padding: 8px 15px;
+                margin-left: 20px;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+    
+            .blog-section .section-content .cards .card .posted-date {
+                font-weight: 250;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                background-color: black;
+                color: #fff;
+                padding: 4px 11px;
+                margin-left: 12px;
+                margin-top: 8px;
+            }
+    
+            .blog-section .section-content.title h2 {
+                font-size: 25px;
+                color: #23d25d;
+                text-transform: uppercase;
+            }
+    
+            .blog-section .section-content .title p {
+                font-size: 14px;
+                color: #6a6a6a;
+                margin-top: 20px;
+    
+            }
+    
+        }
+
+
+@media screen and (max-width:768px) {
+    .blog-section .section-content .cards {
+        grid-template-columns: 1fr;
+        background-color: blue;
+    }
+}

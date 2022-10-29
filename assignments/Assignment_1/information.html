@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>information</title>
+    <script>
+      const queryParams = new URLSearchParams(window.location.search);
+      const email = queryParams.get("email");
+      const password = queryParams.get("password");
+      const name = queryParams.get("name");
+      const gender = queryParams.get("gender");
+      const cnic =
+        queryParams.get("cnic1") +
+        "-" +
+        queryParams.get("cnic2") +
+        "-" +
+        queryParams.get("cnic3");
+      const iubRegistration = queryParams.get("iub-registration");
+      const landline = queryParams.get("landline");
+      const dob = queryParams.get("dob");
+      const mobileNo =
+        queryParams.get("countryCode") + queryParams.get("mobileNo");
+      const religion = queryParams.get("religion");
+      const nationality = queryParams.get("nationality");
+      const isHafiz = queryParams.get("isHafiz");
+      const domecile = queryParams.get("domecile");
+      const address = queryParams.get("address");
+      const fatherName = queryParams.get("father-name");
+      const profession = queryParams.get("profession");
+      const fatherMobile = queryParams.get("father-mobile-no");
+      const fatherCNIC =
+        queryParams.get("father-cnic1") +
+        "-" +
+        queryParams.get("father-cnic2") +
+        "-" +
+        queryParams.get("father-cnic3");
+      const income = queryParams.get("income");
+
+      function showInfo() {
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("password").innerHTML = password;
+        document.getElementById("gender").innerHTML = gender;
+        document.getElementById("cnic").innerHTML = cnic;
+        document.getElementById("iubRegistration").innerHTML = iubRegistration;
+        document.getElementById("landline").innerHTML = landline;
+        document.getElementById("dob").innerHTML = dob;
+        document.getElementById("mobileNo").innerHTML = mobileNo;
+        document.getElementById("religion").innerHTML = religion;
+        document.getElementById("nationality").innerHTML = nationality;
+        document.getElementById("isHafiz").innerHTML = isHafiz;
+        document.getElementById("domecile").innerHTML = domecile;
+        document.getElementById("address").innerHTML = address;
+        document.getElementById("fatherName").innerHTML = fatherName;
+        document.getElementById("profession").innerHTML = profession;
+        document.getElementById("fatherMobile").innerHTML = fatherMobile;
+        document.getElementById("fatherCNIC").innerHTML = fatherCNIC;
+        document.getElementById("income").innerHTML = income;
+      }
+      //   document.getElementById("name").innerText = name
+    </script>
+  </head>
+  <body onload="showInfo()">
+    <h1>Your information</h1>
+    <h4>Name: <span id="name"></span></h4>
+    <h4>Email: <span id="email"></span></h4>
+    <h4>Password: <span id="password"></span></h4>
+    <h4>Gender: <span id="gender"></span></h4>
+    <h4>CNIC: <span id="cnic"></span></h4>
+    <h4>Registration no# (IUB): <span id="iubRegistration"></span></h4>
+    <h4>Landline no#: <span id="landline"></span></h4>
+    <h4>Date of birth: <span id="dob"></span></h4>
+    <h4>Mobile no#: <span id="mobileNo"></span></h4>
+    <h4>Religion: <span id="religion"></span></h4>
+    <h4>Nationality: <span id="nationality"></span></h4>
+    <h4>Hafiz: <span id="isHafiz"></span></h4>
+    <h4>Domecile: <span id="domecile"></span></h4>
+    <h4>Postal address: <span id="address"></span></h4>
+
+    <h1>Father information</h1>
+    <h4>Father Name: <span id="fatherName"></span></h4>
+    <h4>Profession: <span id="profession"></span></h4>
+    <h4>Father CNIC: <span id="fatherCNIC"></span></h4>
+    <h4>Father Mobile no#: <span id="fatherMobile"></span></h4>
+    <h4>Income <span id="income"></span></h4>
+
+    <!-- <h4>Your email is <span id="email"></span></h4> -->
+  </body>
+</html>

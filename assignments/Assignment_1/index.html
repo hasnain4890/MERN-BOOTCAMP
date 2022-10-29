@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 1 By Hasnain Ahmad</title>
+</head>
+
+<body>
+  <div>
+    <form action="./information.html" method="get">
+      <div style="
+          display: flex;
+          justify-content: space-around;
+          margin-right: 250px;
+          margin-left: 250px;
+        ">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" minlength="6" maxlength="15" required />
+      </div>
+      <div>
+        <fieldset style="width: 1000px">
+          <legend style="font-weight: bold">Personal profile</legend>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; margin: 5px">
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 110px">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px; display: flex">
+              <label style="margin-right: 90px">Gender</label>
+              <div style="display: flex">
+                <div style="display: flex; align-items: center">
+                  <input type="radio" name="gender" id="male" value="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div style="display: flex; align-items: center">
+                  <input type="radio" name="gender" id="female" value="female" />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 60px">CNIC/B-Form</label>
+              <input type="number" style="width: 50px" name="cnic1" id="cnic1" required /><span> -</span>
+              <input type="number" style="width: 75px" name="cnic2" id="cnic2"  required /><span> -</span>
+              <input type="number" style="width: 20px" name="cnic3" id="cnic3"  required />
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 100px">Picture</label>
+              <input type="file" name="imageName" id="imageName" accept="image/*" />
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 10px">IUB Registration No.
+              </label>
+              <input type="text" name="iub-registration" id="iub-registration" />
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 60px">Landline No.</label>
+              <input type="number" name="landline" id="landline" required />
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 65px">Date of birth</label>
+              <input type="date" name="dob" id="dob" required/>
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 70px">Mobile No.</label>
+              <select name="countryCode" id="countryCode">
+                <option value="+92">+92</option>
+                <option value="+93">+93</option>
+                <option value="+94">+94</option>
+              </select>
+              <span> -</span>
+              <input type="number" name="mobileNo" id="mobileNo" />
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 90px">Religion</label>
+              <select name="religion" id="religion">
+                <option value="islam" selected>Islam</option>
+                <option value="hinduism">Hinduism</option>
+                <option value="christianity ">Christianity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 70px">Nationality</label>
+              <select name="nationality" id="nationality">
+                <option value="pakistani" selected>Pakistani</option>
+                <option value="british">British</option>
+                <option value="chinese ">Chinese</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 50px">Hafiz-e-Quran</label>
+              <select name="isHafiz" id="isHafiz">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div style="margin-top: 10px; margin-bottom: 10px">
+              <label for="" style="margin-right: 10px">Domecile(Province)</label>
+              <select name="domecile" id="domecile">
+                <option value="kpk" selected>Khyber Pakhtoonkhwa</option>
+                <option value="punjab">Punjab</option>
+                <option value="balochistan">Balohistan</option>
+                <option value="sindh">Sindh</option>
+              </select>
+            </div>
+            <div style="
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 16px;
+              ">
+              <label for="" style="margin-right: 50px">Postel Address</label>
+              <textarea rows="5" required name="address" id="address"></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset style="width: 1000px;margin-top: 20px; margin-bottom: 20px;">
+          <legend style="font-weight: bold;">Father Information</legend>
+          <div style="display: grid; grid-template-columns: 1fr 1fr">
+            <div>
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <label for="" style="margin-right: 35px">Father Name</label>
+                <input type="text" name="father-name" id="father-name" required />
+              </div>
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <label for="" style="margin-right: 50px">Profession</label>
+                <input type="text" name="profession" id="profession" />
+              </div>
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <label for="" style="margin-right: 45px">Mobile No.</label>
+                <input type="number" name="father-mobile-no" id="father-mobile-no" required />
+              </div>
+            </div>
+            <div>
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <label for="" style="margin-right: 60px">CNIC No.</label>
+                <input type="number" style="width: 50px" required  name="father-cnic1" id="father-cnic1"/><span> -</span>
+                <input type="number" style="width: 75px" required name="father-cnic2" id="father-cnic2"/><span> -</span>
+                <input type="number" style="width: 20px" required name="father-cnic3" id="father-cnic3"/>
+              </div>
+              <div style="margin-top: 10px; margin-bottom: 10px">
+                <label for="" style="margin-right: 20px">Monthly Income</label>
+                <input type="number" name="income" id="income" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <hr>
+        <div style="display: flex; justify-content: center; gap: 10px;">
+          <div>
+            <input type="submit" name="submit-btn" id="submit-btn" style="padding:16px; width: 100px;">
+          </div>
+          <div>
+            <input type="reset" name="reset-btn" id="reset-btn" style="padding:16px; width:100px">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+html {
+    font-size: 88.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    width: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(Faisal-Mosque.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+
+    background-color:grey;
+    
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+.navbar .icon {
+    width: 17%;
+    height: 5rem;
+    text-align: center;
+    border-radius: 4rem;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    margin-top: .7rem;
+}
+
+.navbar .logo {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.icon {
+    width: 19.7rem;
+    float: left;
+    height: 4.9rem;
+    margin-left: 3rem;
+
+}
+
+/* .logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 19px;
+
+} */
+
+.menu {
+    width: 28.2rem;
+    float: left;
+    height: 4.9rem;
+
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+
+}
+
+ul li {
+    list-style: none;
+    margin-left: 4.3rem;
+    margin-top: 2.7rem;
+    font-size: 1.4rem;
+   /* display: none; */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.4s;
+
+
+}
+
+ul li a:hover {
+    color:blue;
+}
+
+.search {
+    margin-top: .5rem;
+    width: 330px;
+    float: left;
+
+    margin-left: 26rem;
+
+}
+
+.srch {
+    font-family: 'Times New Roman', Times, serif;
+    width: 14.1rem;
+    height: 2.8rem;
+    background: transparent;
+    border: 1px solid blue;
+    margin-top: 1.6rem;
+    color: #fff;
+    border-right: none;
+    font-size: 1.1rem;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: .3rem;
+}
+
+.btn {
+    width: 7.06rem;
+    height: 2.82rem;
+    background: blue;
+    border: 2px solid blue;
+    margin-top: 1.55rem;
+    color: #fff;
+    font-size: 1.059rem;
+    border-bottom-right-radius: 1.059rem;
+
+}
+
+.btn:focus {
+    outline: none;
+
+}
+
+.srch:focus {
+    outline: none;
+
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aqua;
+}
+
+
+section h3{
+    font-size: 2.47rem;
+    font-weight: 14.12rem;
+    letter-spacing: 0.21rem;
+    text-shadow: 0.070rem 0.070rem 0.141rem black;
+}
+section h1 {
+    margin: 3rem 0 2rem 0;
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+    text-shadow: .2rem .1rem .5rem black;
+    
+}
+section p{
+    word-spacing: .2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: .1em .1rem .1rem black;
+    z-index: 1;
+}
+section a{
+    padding: 1.2rem 3rem;
+    border-radius: .4rem;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;  
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    transition: all 0.4 ease;
+}
+section .btnone{
+    background-color: grey;
+    color:aqua;
+    
+}
+.btnone:hover{
+    background-color: aqua;
+    color: blue;
+    font-weight: bold;
+}
+section .btntwo{
+    background-color:grey;
+        color:aqua;
+
+}
+.btntwo:hover {
+    background-color: aqua;
+    color: blue;
+    font-weight: bold;
+}
+.change-content:after{
+    content: '';
+    animation: change-text 10s infinite linear ;
+    
+    color: red;
+
+}
+@keyframes change-text{
+    0%{content: "MONAL";}
+         25% {
+             content: "SHAKARPARIAN";
+         }
+                  50% {
+                      content: "CENTAURIOUS";
+                  }
+                                   100% {
+                                       content: "F-10 MARKAZ";
+                                   }
+    
+}
+
+.footer{
+    width: 100%;
+    height: 15vh;
+    border: .2rem solid pink;
+    background-color: rgb(10, 42, 21);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu-bar{
+    display: none;
+    margin-right: -35rem;
+    display: none;
+}
+.main .navbar label{
+    font-size: 20px;
+    color: aqua;
+    cursor: pointer;
+    /* display: none; */
+    margin-left: 62rem;
+    
+}
+
+@media screen and (min-width:600px) {
+.main .navbar label{
+    display: none;
+}
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1350px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:999px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width:599px){
+
+    html{
+        font-size: 30%;
+        z-index: 9999;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    
+    .menu {
+            width:100%;
+            /* float: right; */
+            height: 2.9rem;
+           
+            
+    
+        }
+
+ul {
+    width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+       
+        
+
+
+        /* display: none; */
+    }
+body>div>div>div.menu>ul{
+    
+    background-color: black;
+}
+    ul li {
+        list-style: none;
+        margin-left: 4.3rem;
+        margin-top: 13.7rem;
+        font-size: 2.4rem;
+        background-color: black;
+        background: black
+    }
+    .search{
+        display: none;
+    }
+   
+     section h1{
+    
+        display: none;
+    }
+        section h3 {
+        
+            display: none;
+        } 
+                 section p {
+                    display: none;
+                }
+                                section a {
+                                    display: none;
+                                }  
+
+    #menu-bar:checked ~ ul li {
+        display: block;
+
+    }
+    /* #menu-bar:checked ~ section{
+        display: none;
+    }
+     */
+}
