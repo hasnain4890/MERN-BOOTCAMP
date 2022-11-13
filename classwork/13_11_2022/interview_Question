@@ -1,0 +1,15 @@
+// function statement :
+//                     writing a function is called function statement.
+
+// function expression :
+//                     assign a function (anonymous function) to a variable is called function expression.
+
+// Difference between both is :
+//                             hoisting =>call before function body.
+//                             statement will not throw any eror , however expression comes up with an error (type error)
+
+// function statement and function declaration both are same.
+
+//anonymous function uses in call back functions
+
+// params passes in function creating time while arguments passes during calling time
