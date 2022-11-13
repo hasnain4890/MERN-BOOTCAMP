@@ -1,0 +1,123 @@
+body {
+  background-color: #363a41;
+}
+
+p {
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+
+h5 {
+  color: white;
+}
+
+i {
+  font-size: 28px;
+  margin: 4px;
+}
+
+a {
+  color: white !important;
+}
+
+h1 {
+  font-family: "Secular One", sans-serif;
+  color: whitesmoke;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Alfa Slab One", cursive;
+  color: lightgray;
+  margin-right: 12px;
+}
+
+span {
+  font-weight: bold;
+  color: salmon;
+}
+
+.btn:hover {
+  background-color: rgb(226, 98, 84) !important;
+}
+
+nav {
+  position: fixed !important;
+  z-index: 2;
+  width: calc(100% - 16px);
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 5px;
+  border-radius: 40px;
+  background-color: #575d65;
+  border-bottom: 1px solid salmon;
+}
+
+nav div a div {
+  width: 52px;
+  height: 36px;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border-radius: 5px;
+}
+
+.contact-icon-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-icon-container p {
+  padding: 0px !important;
+  margin: 0% !important;
+}
+.profile-image {
+  max-height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+  filter: grayscale(90%);
+}
+
+.name-container {
+  background-color: #363a41;
+  width: 220px;
+  padding: 20px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  left: -130px;
+}
+
+.download-btn {
+  background-color: transparent;
+  border-color: salmon;
+  color: salmon;
+}
+
+.project-btn {
+  background-color: salmon;
+  border-color: salmon;
+}
+
+@media only screen and (max-width: 574px) {
+  .name-container {
+    width: fit-content;
+    padding: 0px;
+    height: fit-content;
+    margin: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    border-radius: 0%;
+    left: 0px;
+  }
+  .name-container h1 {
+    font-size: 24px;
+  }
+}
