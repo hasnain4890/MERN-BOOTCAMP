@@ -1,64 +1,96 @@
 import React from "react";
 import Child from "./Child";
 
-const Parent = () => {
-  const parentData = [
-    {
-      fatherName: {
-        name: "Mohammad Munir",
-        age: 50,
-        occupation: "xyz",
+function Parent() {
+  const familyTree = {
+    grandParents: {
+      grandFather: {
+        name: "Naseem gul",
+        city: " District, Swabi",
+        relation: "Grandfather",
       },
-      motherName: {
-        name: "abc",
-        age: 45,
-        occupation: "House Wife",
+      grandMother: {
+        name: "Norania",
+        city: "Swabi",
+        relation: "Grandmother",
       },
-      childs: [
+      childrens: [
         {
-          name: "Mansoor Abbas",
-          age: 23,
-          occupation: "Polic Officer",
-        },
-        {
-          name: "Ghulam Abbas",
-          age: 30,
-          occupation: "Software Engineer",
+          parents: {
+            father: {
+              name: "Abdul Karim",
+              city: "Swabi",
+              relation: "Father",
+            },
+            mother: {
+              name: "Safoora",
+              city: " Swabi , Pakistan",
+              relation: "Mother",
+            },
+            childrens: [
+              {
+                sister: {
+                  name: "Hina",
+                  city: " Swabi , Pakistan",
+                  relation: "Sister",
+                },
+                myself: {
+                  name: "Hasnain ahmad",
+                  city: " Zarobi , pakistan",
+                },
+                brother: {
+                  name: "Zahoor Ahmad",
+                  city: " Swabi , Pakistan",
+                  relation: "brother",
+                },
+              },
+            ],
+          },
+          parentsSiblings: {
+            aunt: {
+              name: "SAIMA",
+              city: " swabi pak",
+              relation: "Aunt",
+            },
+            husband: {
+              name: "afzaal khan",
+              city: " zarobi , pakistan",
+              relation: "SAIMA's husband",
+            },
+
+            childrens: [
+              {
+                cousin: {
+                  name: " Wifaq ahmad",
+                  city: " swabi , pakistan",
+                  relation: "SAIMA's daughter(cousin)",
+                },
+              },
+            ],
+          },
         },
       ],
     },
-    {
-      fatherName: {
-        name: "Joe",
-        age: 66,
-        occupation: "xyz",
-      },
-      motherName: {
-        name: "asdf",
-        age: 44,
-        occupation: "House Wife",
-      },
-      childs: [
-        {
-          name: "Salman Abbas",
-          age: 23,
-          occupation: "Accountant",
-        },
-        {
-          name: "Saleem Abbas",
-          age: 30,
-          occupation: "IT Officer",
-        },
-      ],
-    },
-  ];
+  };
 
   return (
-    <>
-      <h2>Parent Detail</h2>
-      <Child parentData={parentData} />
-    </>
+    <div
+      style={{
+        width: "50%",
+        margin: " 0px auto",
+        alignText: "center",
+        backgroundColor: "teal",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <h1 style={{ textAlign: "center", color: "wheat" }}>
+        Family Tree of NASEEM GUL.
+      </h1>
+      <Child data={familyTree} />
+    </div>
   );
-};
+}
 
 export default Parent;
