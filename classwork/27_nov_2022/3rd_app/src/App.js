@@ -1,6 +1,18 @@
 import React, { Component, useState } from "react";
 import InputComp from "./components/InputComp";
 import Title from "./components/Title";
+//import Main from "./4_december_2022/task1/Main";
+import Main from "./4_december_2022/task2/Main";
+
+function App() {
+  return (
+    <div>
+      <Main />
+    </div>
+  );
+}
+
+export default App;
 
 // task 1
 // const App = () => {
@@ -46,46 +58,44 @@ import Title from "./components/Title";
 // }
 
 // task 3
-function App() {
-  const [state, setState] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    age: "",
-  });
+// function App() {
+//   const [state, setState] = useState({
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     age: "",
+//   });
 
-  const handleClick = () => {
-    console.log("state", state);
-  };
+//   const handleClick = () => {
+//     console.log("state", state);
+//   };
 
-  const changeHandler = (event) =>
-    setState({ ...state, [event.target.name]: event.target.value });
+//   const changeHandler = (event) =>
+//     setState({ ...state, [event.target.name]: event.target.value });
 
-  return (
-    <div>
-      <h1>User Form</h1>
-      <form action="" onSubmit={(e) => e.preventDefault()}>
-        <InputComp
-          placeholder="fist name"
-          name="firstName"
-          changeHandler={changeHandler}
-        />
-        <InputComp
-          placeholder="last name"
-          name="lastName"
-          changeHandler={changeHandler}
-        />
-        <InputComp
-          placeholder="email"
-          name="email"
-          changeHandler={changeHandler}
-        />
-        <InputComp placeholder="age" name="age" changeHandler={changeHandler} />
+//   return (
+//     <div>
+//       <h1>User Form</h1>
+//       <form action="" onSubmit={(e) => e.preventDefault()}>
+//         <InputComp
+//           placeholder="fist name"
+//           name="firstName"
+//           changeHandler={changeHandler}
+//         />
+//         <InputComp
+//           placeholder="last name"
+//           name="lastName"
+//           changeHandler={changeHandler}
+//         />
+//         <InputComp
+//           placeholder="email"
+//           name="email"
+//           changeHandler={changeHandler}
+//         />
+//         <InputComp placeholder="age" name="age" changeHandler={changeHandler} />
 
-        <button onClick={() => handleClick()}>click me</button>
-      </form>
-    </div>
-  );
-}
-
-export default App;
+//         <button onClick={() => handleClick()}>click me</button>
+//       </form>
+//     </div>
+//   );
+// }
