@@ -20,7 +20,7 @@ function LoginPage() {
   const handlesubmit = (event) => {
     event.preventDefault();
     console.log(formvalues);
-    navigate("/");
+    navigate("/post");
   };
 
   const handlegoogleauth = async () => {
@@ -28,7 +28,7 @@ function LoginPage() {
     const user = response.user;
     console.log(user);
     if (user) {
-      navigate("/");
+      navigate("/post");
     }
   };
   return (
