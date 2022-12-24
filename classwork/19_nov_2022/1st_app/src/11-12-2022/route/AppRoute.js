@@ -5,6 +5,11 @@ import Post from "../12_17_2022/Post";
 import User_details from "../12_17_2022/User_details";
 import AppLayout from "../layout/AppLayout";
 import Profile from "../../17_nov_assignment_3/pages/Profile";
+import Task from "../../24_12_2022/pages/Task";
+import Task2 from "../../24_12_2022/pages/Task2";
+import ShiftMOde from "../../24_12_2022/pages/ShiftMOde";
+import Validation from "../../24_12_2022/pages/Validation";
+import DogApi from "../../24_12_2022/pages/DogApi";
 
 function AppRoute() {
   return (
@@ -17,6 +22,11 @@ function AppRoute() {
           <Route path="/user_details/:id" element={<User_details />} />
         </Route> */}
         <Route path="/profile" element={<Profile />} />
+        <Route path="/Task" element={<Task />} />
+        {/* <Route path="/" element={<Task2 />} /> */}
+        <Route path="/" element={<ShiftMOde />} />
+        {/* <Route path="/" element={<Validation />} /> */}
+        {/* <Route path="/" element={<DogApi />} /> */}
       </Routes>
     </BrowserRouter>
   );

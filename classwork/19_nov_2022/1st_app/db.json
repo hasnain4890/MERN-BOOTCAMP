@@ -1,0 +1,23 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "toyota",
+      "model": "corolla"
+
+    },
+    {
+      "id": 2,
+      "brand": "Audi",
+      "model": "2022"
+
+    },
+    {
+      "id": 3,
+      "brand": "Bently",
+      "model": "2000"
+
+    }
+  ]
+  
+}
