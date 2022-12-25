@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Task2() {
+  const [bgcolor, setbgcolor] = useState("#fff");
+
   const colorsArray = [
     {
       id: 1,
-      color: "red",
+      color: "Green",
       hexcode: "#324323",
     },
     {
@@ -14,7 +16,7 @@ function Task2() {
     },
     {
       id: 3,
-      color: "green",
+      color: "Green",
       hexcode: "#877384",
     },
     {
@@ -22,19 +24,33 @@ function Task2() {
       color: "blue",
       hexcode: "#173784",
     },
+    {
+      id: 5,
+      color: "blue",
+      hexcode: "#000",
+    },
+    {
+      id: 5,
+      color: "blue",
+      hexcode: "#847548",
+    },
   ];
   return (
-    <div>
-      <h1>colors Array</h1>
+    <div
+      style={{ backgroundColor: bgcolor }}
+      className="flex w-screen h-screen flex-wrap "
+    >
       {colorsArray.map((color) => {
         return (
-          <div>
+          <div className="flex">
             <div
-              className="p-3 m-4 w-80 h-40"
+              onClick={() => setbgcolor(color.hexcode)}
+              className="p-2 m-2 w-80 h-40 border-black border-4 rounded-lg gap-2"
               style={{ background: color.hexcode }}
             >
-              <li>id : {color.id}</li>
-              <li>color : {color.color}</li>
+              <li className="flex justify-center p-5 font-bold text-slate-50">
+                color : {color.color}
+              </li>
             </div>
           </div>
         );

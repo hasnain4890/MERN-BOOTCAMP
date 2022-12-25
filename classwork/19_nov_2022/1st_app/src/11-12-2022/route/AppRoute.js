@@ -10,6 +10,7 @@ import Task2 from "../../24_12_2022/pages/Task2";
 import ShiftMOde from "../../24_12_2022/pages/ShiftMOde";
 import Validation from "../../24_12_2022/pages/Validation";
 import DogApi from "../../24_12_2022/pages/DogApi";
+import Counter_task from "../../25_dec_2022/pages/Counter_task";
 
 function AppRoute() {
   return (
@@ -22,11 +23,17 @@ function AppRoute() {
           <Route path="/user_details/:id" element={<User_details />} />
         </Route> */}
         <Route path="/profile" element={<Profile />} />
+
+        {/* 24 dec tasks */}
         <Route path="/Task" element={<Task />} />
-        {/* <Route path="/" element={<Task2 />} /> */}
-        <Route path="/" element={<ShiftMOde />} />
+        <Route path="/" element={<Task2 />} />
+        {/* <Route path="/" element={<ShiftMOde />} /> */}
         {/* <Route path="/" element={<Validation />} /> */}
         {/* <Route path="/" element={<DogApi />} /> */}
+
+        {/* 25 dec tasks */}
+
+        {/* {<Route path="/" element={<Counter_task />} />} */}
       </Routes>
     </BrowserRouter>
   );
