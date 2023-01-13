@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "../login/LoginPage";
-import Home from "../login/Home";
+//import Home from "../login/Home";
 import Post from "../12_17_2022/Post";
 import User_details from "../12_17_2022/User_details";
 import AppLayout from "../layout/AppLayout";
@@ -11,6 +11,7 @@ import ShiftMOde from "../../24_12_2022/pages/ShiftMOde";
 import Validation from "../../24_12_2022/pages/Validation";
 import DogApi from "../../24_12_2022/pages/DogApi";
 import Counter_task from "../../25_dec_2022/pages/Counter_task";
+import Home from "../../31_dec_2022_redux/pages/Home";
 
 function AppRoute() {
   return (
@@ -26,14 +27,15 @@ function AppRoute() {
 
         {/* 24 dec tasks */}
         <Route path="/Task" element={<Task />} />
-        <Route path="/" element={<Task2 />} />
-        {/* <Route path="/" element={<ShiftMOde />} /> */}
-        {/* <Route path="/" element={<Validation />} /> */}
+        <Route path="/task2" element={<Task2 />} />
+        <Route path="/ShiftMOde" element={<ShiftMOde />} />
+        {/* <Route path="/" element={<Validation />} />
         {/* <Route path="/" element={<DogApi />} /> */}
 
         {/* 25 dec tasks */}
 
         {/* {<Route path="/" element={<Counter_task />} />} */}
+        {/* {<Route path="/" element={<Home />} />} */}
       </Routes>
     </BrowserRouter>
   );

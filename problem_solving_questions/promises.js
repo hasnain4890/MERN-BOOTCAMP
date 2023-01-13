@@ -23,7 +23,7 @@ p1.then((value) => {
   console.log("value");
 });
 p2.catch((error) => {
-  console.log("some eerror is occured");
+  console.log("some error is occured");
 });
 
 console.log(p1, p2);
