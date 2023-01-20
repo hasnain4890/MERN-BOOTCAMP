@@ -11,5 +11,7 @@ for (let i = data.length - 1; i >= 0; i--) {
       data[i] = newEl;
     }
   }
-  console.log(data[i]);
 }
+
+// data[data.length + 1] = 2;
+console.log(data);

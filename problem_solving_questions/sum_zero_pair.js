@@ -1,7 +1,6 @@
-//sum xero problem 
+//sum xero problem
 //[5,7,3,21,7,-5,8,-3]
 //output [5,-5]
-
 
 // function getsumpairzero(array){
 //     for(let number of array){
@@ -16,48 +15,30 @@
 // const res = getsumpairzero([5,7,3,21,7,-5,8,-3]);
 // console.log(res);
 
-
 //another optimixe solution for above problem statement (using while single loop)
 //[-5,-4,-3,,1,2,3,4,8,9]
-function sum_zero(array){
-    
-    //sorted=array.sort(array);
-    // a=array.sort();
-    // console.log(a)
+function sum_zero(array) {
+  //sorted=array.sort(array);
+  // a=array.sort();
+  // console.log(a)
 
-  left =0;
-  right=array.length-1;
+  left = 0;
+  right = array.length - 1;
 
- while(array[left]<array[right]){
-
-    sum = array[left]+array[right];
-    if(sum ===0){
-
- return [array[left],array[right]];
-
-    }else if(sum>0){
-
-        right--;
-
-    }else{
-
-        left ++;
+  while (array[left] < array[right]) {
+    sum = array[left] + array[right];
+    if (sum === 0) {
+      return [array[left], array[right]];
+    } else if (sum > 0) {
+      right--;
+    } else {
+      left++;
     }
-     
+  }
 }
-}
- const res = sum_zero([-5,-4,-3,1,2,3,4,8,9]);
+const res = sum_zero([-5, -4, -3, 1, 2, 3, 4, 8, 9]);
 
- console.log(res);
-
-
-
-
-
-
-
-
-
+console.log(res);
 
 //4 = 1, 2, 3,4
 //0+1+2+3+4+5+6+7+8+9+10=55
@@ -69,14 +50,10 @@ function sum_zero(array){
 //         var total =total + i;
 //     }
 //     return total;
-    
+
 // }
 // const res=get_total_sum(3);
 // console.log(res);
-
-
-
-
 
 //simple sorting
 // let a=[5,3,2,1,0];
